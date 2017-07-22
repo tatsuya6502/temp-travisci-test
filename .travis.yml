@@ -1,0 +1,25 @@
+language: rust
+dist: trusty
+sudo: false
+cache:
+  directories:
+    - "$HOME/.cargo"
+    - "$HOME/rust"
+script:
+  # https://docs.travis-ci.com/user/pull-requests
+  # https://docs.travis-ci.com/user/encryption-keys
+  # https://docs.travis-ci.com/user/environment-variables
+  - echo "TRAVIS: $TRAVIS"
+  - echo "TRAVIS_EVENT_TYPE: $TRAVIS_EVENT_TYPE"
+  - echo "TRAVIS_JOB_NUMBER: $TRAVIS_JOB_NUMBER"
+  - echo "TRAVIS_BRANCH: $TRAVIS_BRANCH"
+  - echo "TRAVIS_PULL_REQUEST: $TRAVIS_PULL_REQUEST"
+  - echo "TRAVIS_PULL_REQUEST_BRANCH: $TRAVIS_PULL_REQUEST_BRANCH"
+  - echo "TRAVIS_RUST_VERSION: $TRAVIS_RUST_VERSION"
+  - echo "TRAVIS_SECURE_ENV_VARS: $TRAVIS_SECURE_ENV_VARS"
+  # Defined in the env secure section. Can only be decrypted by the Travis secret key
+  # attached to rust-lang-ja/temp-travisci-test.
+  - echo "MY_SECRET_VALUE: $MY_SECRET_VALUE"
+# env:
+  # global:
+    # secure:
