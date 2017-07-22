@@ -20,6 +20,6 @@ script:
   # Defined in the env secure section. Can only be decrypted by the Travis secret key
   # attached to rust-lang-ja/temp-travisci-test.
   - echo "MY_SECRET_VALUE: $MY_SECRET_VALUE"
-# env:
-  # global:
-    # secure:
+env:
+  global:
+    secure: "r141eUYT/RZU9+LqbOTgJuyUzN9zwuwERRJ56FuaODRF10DjzK5UU2PtsF2Nq+4LKysFhP5OA202yjZ4tG8Y140Dz9BsHYCHhftlO9DuCH46sqgemJheaTtsOMGUp3h+aMCVidP21nRDKpYy9qwaTMK1khbCXr6QuVex48FgnvnSfl5584MnSM7tIX5daXxbCrJTSe5VtuWw12OAML11YuPxMoV6kP70Y9kZX/Hl4OAbUQ/xWH+hnS/3vwM1/3qFkwxl5H43X7nX5PDbbqEkK6+lulblZKkKP2L9jU1qWrMpikXDN3auKqKmHjFjmZz3Mqqwoz0w2lpYjrRdZxylDXKN5Trja9ChwePZWWS3LFejtC5rIq+JBd7XQGENjygCZYt+fT7u00biR78QEkixg3JjDhazFypzjwkiniN9MSyMz1zdeFgvfBOdQNzQ+S6yO6B19WhSwKJrAh4k9bv9fyZ8cQ4KwjugBST4QLrrQ3Q9usd0pjUfJMN+FOM2fJE0LkP1GSunQPK7TFs3iC0iuR0wWbOMJPmV6p89qQbbrBt/LYnya2a2PRi+7fAeMZFQLaHNCxpiHl3FcGs39mVCWZ2oZsrHVyKebIKNEoTv9Cje7SUGJjuPoJ3bmyLqIr/Rpu+b1NndlrN/svM6q5gIdLkRtgofehEytksHqS6Narg="
